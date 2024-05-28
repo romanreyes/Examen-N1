@@ -9,6 +9,12 @@ int main(){
     int count = Count_IDs(f);
     Registro *R = new Registro[count];
     showIDs(f, R);
+    rewind(f);
+    uint64_t count2 = countDevices(f);
+    printf("\n Ingrese un ID: ");
+    int id;
+    scanf("%d",&id);
+    getRegister(id);
     delete []R;
     fclose(f);
 }
