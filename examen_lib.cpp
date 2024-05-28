@@ -83,7 +83,7 @@ void llenar_struct(Registro *R){
     uint64_t info; //solo lo voy a usar para saltar
     uint64_t upper_level;
     while (fread(&camp, sizeof(uint64_t), 1, f)){
-        R[].LLDC= extract_segment16(camp, 32, 47);
+        R[count].LLDC= extract_segment16(camp, 32, 47);
     }
     
 };
